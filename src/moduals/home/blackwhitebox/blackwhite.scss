@@ -1,0 +1,20 @@
+@import "../../../style/main.scss";
+
+.blackwhite-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    .blackwhite-white{
+        height: 250px;
+        background-color: var(--theme-white);
+        @media (max-width:768px) {
+            height: 82px;
+        }
+    }
+    .blackwhite-black{
+        height: 250px;
+        background-color: var(--theme-light-black);
+        @media (max-width:768px) {
+            height: 82px;
+        }
+    }
+}

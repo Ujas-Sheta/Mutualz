@@ -1,0 +1,210 @@
+@import "../../../style/main.scss";
+
+.abouthus{
+    padding: 96px 0 230px 0;
+    @media (max-width:768px) {
+        padding: 70px 0 138px 0;
+    }
+    .abouthus-title{
+        h3{
+            text-align: center;
+            @include font60;
+            margin-bottom: 40px;
+            @media (max-width:768px) {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: .56px;
+                margin: 0 0 5px 0;
+            }
+        }
+        span{
+            display: block;
+            @include font20;
+            font-weight: 400;
+            letter-spacing: .02em;
+            text-align: center;
+            margin-bottom: 20px;
+            @media (max-width:768px) {
+                font-size: 10px;
+                max-width: 291px;
+                margin: 0 auto;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: .2px;
+            }
+        }
+        p{
+            @include font20;
+            font-weight: 400;
+            letter-spacing: .02em;
+            text-align: center;
+            margin-bottom: 20px;
+            @media (max-width:768px) {
+                font-size: 10px;
+                max-width: 291px;
+                margin: 0 auto;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: .2px;
+            }
+            
+        }
+    }
+    .abouthus-profiles{
+        position: relative;
+        padding: 263px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px 30px;
+        @media (max-width:768px) {
+            padding: 100px 0 0 0;   
+        }
+        @media (max-width:576px) {
+            display: grid;
+            grid-template-columns: repeat(1 ,1fr);
+            justify-content: center;
+        }
+        .abouthus-profiles-bac{
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translate(-50%);
+            background-image: url(../../../assests/images/vec2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1016px;
+            height: 1098px;
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+        .abouthus-profile{
+            
+            @media (max-width:576px) {
+                display: flex;
+                justify-content: center;
+            }
+            .abouthus-profile-details{
+                &:hover{
+                    .abouthus-profile-img{
+                        margin-top: -40px;
+                        img{
+                            transform: scale(0.8);
+                        }
+                    }
+                    .abouthus-profile-text{
+                        bottom: 50px;
+                        transform: translateY(0);
+                        .abouthus-profile-text-heading{
+                            h6{
+                                .abouthus-profile-text-heading-line{
+                                    height: .5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                position: relative;
+                overflow: hidden;
+                width: 382px;
+                height: 382px;
+                border-radius: 50%;
+                max-width: 382px;
+                min-width: 382px;
+                background-color: #f3363c1a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width:768px) {
+                    min-width: 300px;
+                    max-width: 300px;
+                    height: 300px;
+                }
+                @media (max-width:576px) {
+                    min-width: 280px;
+                    max-width: 280px;
+                    height: 280px;
+                }
+                .abouthus-profile-img{
+                    img{
+                        transition: .3s ease-in-out;
+                        @media (max-width:768px) {
+                           max-width: 100px;
+                        }
+                    }
+                    transition: .3s ease-in-out;
+                }
+                .abouthus-profile-text{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    transform: translateY(100%);
+                    transition: .3s ease-in-out;
+                    .abouthus-profile-text-heading{
+                        display: flex;
+                        justify-content: center;
+                        h6{
+                            position: relative;
+                            color: #000;
+                            text-align: center;
+                            font-family: Inter, sans-serif;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            @media (max-width:768px) {
+                                font-size: 18px ; 
+                                line-height: 30px;
+                            }
+                            .abouthus-profile-text-heading-line{
+                                position: absolute;
+                                bottom: -5px;
+                                width: 100%;
+                                height: 1px;
+                                left: 0;
+                                background: #F3363C;
+                                @media (max-width:768px) {
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    p{
+                        color: #000;
+                        text-align: center;
+                        font-family: "Montaga", serif;
+                        margin: 5px 0 0;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 145.023%;
+                        text-align: center;
+                        @media (max-width:768px) {
+                            font-size: 16px ; 
+                            line-height: 20px;
+                        }
+                    }
+                    span{
+                        color: #000;
+                        text-align: center;
+                        font-family: "Montaga", serif;
+                        font-size: 16px;
+                        display: block;
+                        font-style: normal;
+                        font-weight: 400;
+                        @media (max-width:768px) {
+                            font-size: 16px ; 
+                            line-height: 20px;
+                        }
+                        line-height: 145.023%;
+                    }
+                }
+            }
+        }
+    }
+}

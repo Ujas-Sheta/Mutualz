@@ -1,0 +1,75 @@
+@import "../../../style/main.scss";
+
+
+.timig{
+    padding: 128px 0 700px 0;
+    @media (max-width:768px) {
+        padding: 40px 0 70px 0;
+    }
+    .timing-grid{
+        display: grid;
+        grid-template-columns: 418px 1fr;
+        gap: 10px;
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .timing-grid-first{
+            
+            h5{
+                @include font34;
+                margin-bottom: 10px;
+                color: var(--theme-black);
+                @media (max-width:768px) {
+                    @include font20;
+                    font-family: 'Montaga', serif;
+                    font-weight: 400;
+                }
+            }
+            h6{
+                @include font70;
+                margin-bottom:10px;
+                color: var(--theme-primory-color);
+                @media (max-width:768px) {
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 60px;   
+                }
+            }
+            p{
+                @include font34;
+                margin-bottom: 10px;
+                color: var(--theme-black);
+                @media (max-width:768px) {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    max-width: 272px;
+                    line-height: 34px;
+                    margin-bottom: 30px;
+                }
+            }
+            .timing-grid-first-img{
+                margin: 0 0 30px 0;
+            }
+            button{
+                border: none;
+                padding: 15px;
+                color: var(--theme-white);
+                text-align: center;
+                @include font20;
+                border-radius: 5px;
+                background: #F3363C;
+                min-width: 393px;
+                font-weight: 700;
+                line-height: normal;
+                @media (max-width:768px) {
+                    font-size: 15px;
+                    min-width: auto;
+                    padding: 14px 18px;
+                }
+            }
+        }
+    }
+}

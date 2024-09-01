@@ -1,0 +1,106 @@
+@import "../../../style/main.scss";
+
+
+.services{
+    padding: 125px 0;
+    @media (max-width:768px) {
+        padding: 256px 4px 77px 4px;
+    }
+    .services-grid{
+        display: grid;
+        grid-template-columns: 1fr 542px;
+        gap: 110px;
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        .services-grid-left{
+            
+            h4{
+                @include font60;
+                letter-spacing: .02em;
+                @media (max-width:768px) {
+                    @include font36;
+                    text-align: left;
+                }
+            }
+            .services-grid-img{
+                position: relative;
+                @media (max-width:768px) {
+                    right: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .services-grid-img-round{
+                    max-width: 525px;
+                    @media (max-width:768px) {
+                        max-width: 175px;
+                    }
+                }
+                .services-grid-img-logo{
+                    position: absolute;
+                    top: 54%;
+                    left: 50%;
+                    transform: translate(-50% , -50%);
+                    @media (max-width:768px) {
+                        max-width: 96px;
+                        left: 75%;
+                    }
+                }
+            }
+        }
+        .services-grid-right{
+            display: grid;
+            grid-template-columns: 5px 1fr;
+            gap: 29px;
+            .services-grid-right-first-grid{
+                .services-grid-right-first-grid-line{
+                    position: relative;
+                    width: 100%;
+                    height: 185px;
+                    border-radius: 5px;
+                    background-color: var(--theme-line-background);
+                    @media (max-width:768px) {
+                        height: 109px;
+                    }
+                    .services-grid-right-first-grid-line-blue{
+                        position: absolute;
+                        background: var(--theme-blue-line);
+                        border-radius: 5px;
+                        width: 100%;
+                        height: 55px;
+                        top: 0%;
+                    }
+                }
+            }
+            .services-grid-right-details{
+                h5{
+                    @include font32;
+                    margin-bottom: 33px;
+                    @media (max-width:768px) {
+                        @include font20;
+                        font-family:  Helvetica;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    }
+                }
+                .services-grid-right-details-lasth5{
+                    margin: 0;
+                }
+                p{
+                    max-width: 413px;
+                    @include font20;
+                    padding: 43px 0 0 0 ;
+                    @media (max-width:768px) {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 128.875%;
+                        max-width: 267px;
+                    }
+                }
+            }
+        }
+    }
+}

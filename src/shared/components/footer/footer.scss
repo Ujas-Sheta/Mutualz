@@ -1,0 +1,180 @@
+@import "../../../style/main.scss";
+
+footer{
+  background-image: url(../../../assests/images/footer-img.svg);
+  padding: 154px 0 21px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  @media (max-width:768px) {
+    background-image: url(../../../assests/images/download.png);
+    padding: 145px 0 15px 0;
+  }
+  .footer-detail{
+    padding: 0 82px 5px 82px ;
+    margin: 0 0 37px 0;
+
+    h2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      @include font60;
+      font-weight: 700;
+      text-align: center;
+      line-height: 76px;
+      letter-spacing: .02em;
+      font-family: helvetica;
+      color:var(--theme-black);
+      @media (max-width:768px) {
+        font-size: 22px;
+        line-height: 1.5;
+        max-width: 238px;
+        margin: 0 auto;
+        gap: 0 10px;
+      }
+      svg{
+        path{
+          fill: var(--theme-black);
+        }
+        @media (max-width:768px) {
+          width: 85px;
+          height: 26px;
+        }
+      }
+      span{
+        color: var(--theme-white);
+      }
+    }
+    h3{
+      text-align: center;
+      @include font20;
+      font-weight: 700;
+      @media (max-width:768px) {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: .02em;
+        
+      }
+    }
+  }
+  .footer-inputitems{
+    max-width: 602px;
+    position: relative;
+    margin: 0 auto;
+    @media (max-width:768px) {
+      max-width: 397px;
+    }
+    ::placeholder{
+      color: rgb(225, 221, 221);
+    }
+    input{
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 37px;
+      font-family: helvetica;
+      letter-spacing: .02em;
+      color: #000;
+      padding: 0 45px;
+      height: 60px;
+      border: none;
+      @media (max-width:768px) {
+        font-size: 14px;
+        padding: 0 25px;
+        font-style: normal;
+        font-weight: 700;
+        height: 51px;
+        line-height: 20px;
+        letter-spacing: .28px;
+      }
+    }
+    .footer-send-icon{
+      width: 60px;
+      height: 60px;
+      background-color: var(--theme-bac-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: -2px;
+      @media (max-width:768px) {
+          width: 51px;
+          height: 51px;
+      }
+    }
+  }
+  .footer-last-logo{
+    margin: 48px 0 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:768px) {
+      margin: 59px 0 11px;
+    }
+    svg{
+      path{
+        fill: var(--theme-black);
+      }
+      @media (max-width:768px) {
+          width: 93px;
+          height: 40px;
+      }
+    }
+  }
+  .footer-menu-alignment{
+    padding: 0 0 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span{
+      display: block;
+      cursor: pointer;
+      @include font16;
+      color: var(--theme-black);
+      font-weight: 400;
+      font-family: "Heebo", sans-serif;
+      line-height: 42px;
+      @media (max-width:768px) {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 260.4%;
+      }
+    }
+    @media (max-width:768px) {
+      max-width: 279px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 0 23px;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+  }
+  .footer-copy-right{
+    p{
+      text-align: center;
+      @include font16;
+      font-family: "Heebo", sans-serif;
+      color: var(--theme-black);
+      font-weight: 300; 
+      line-height: 42px;
+      @media (max-width:768px) {
+        max-width: 195px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        margin: 0 auto;
+        line-height: 170.4%;
+      }
+    }
+  }
+}
